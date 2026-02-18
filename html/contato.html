@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - CadesNet</title>
+    <meta name="description"
+        content="Entre em contato com a CadesNet para soluções em conectividade e assistência técnica. Resposta imediata.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/contato.css">
+    <link rel="stylesheet" href="/css/contatoResponsividade.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-placeholder">CN</div>
+                    <span class="logo-text">CadesNet</span>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-menu">
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="servico.html">Serviços</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="contato.html" class="active">Contato</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menu">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero"
+            style="background: linear-gradient(135deg, rgba(12, 10, 10, 0.85) 0%, rgba(220, 208, 208, 0.148) 100%), url('/designAssets/telefone.jpg') center/cover no-repeat;">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Entre em Contato Conosco</h1>
+                    <p>Estamos prontos para atender suas necessidades em conectividade e assistência técnica. Fale
+                        conosco e descubra como podemos ajudar.</p>
+                    <div class="hero-decoration">
+                        <div class="decoration-circle circle-1"></div>
+                        <div class="decoration-circle circle-2"></div>
+                        <div class="decoration-circle circle-3"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulário de Contato -->
+        <section class="contact-form-section">
+            <div class="container">
+                <div class="contact-form-container">
+                    <div class="form-intro">
+                        <h2>Envie sua Mensagem</h2>
+                        <p>Precisa de ajuda? Preencha o formulário abaixo e nossa equipe entrará em contato rapidamente.
+                        </p>
+                        <div class="form-features">
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Resposta imediata</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Atendimento personalizado</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Orçamento sem compromisso</span>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact-form" id="contactForm" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Nome Completo *</label>
+                                <input type="text" id="name" name="name" required placeholder="Seu nome completo">
+                                <span class="error-message" id="nameError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail *</label>
+                                <input type="email" id="email" name="email" required placeholder="seu@email.com">
+                                <span class="error-message" id="emailError"></span>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Telefone/WhatsApp</label>
+                                <input type="tel" id="phone" name="phone" placeholder="(11) 99999-9999">
+                                <span class="error-message" id="phoneError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="service">Serviço de Interesse</label>
+                                <select id="service" name="service">
+                                    <option value="">Qual serviço precisa?</option>
+                                    <option value="internet">Internet Fibra Óptica</option>
+                                    <option value="assistencia">Assistência Técnica</option>
+                                    <option value="cftv">CFTV e Monitoramento</option>
+                                    <option value="redes">Redes e Infraestrutura</option>
+                                    <option value="outro">Outro - Descreva abaixo</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="message">Como podemos ajudar? *</label>
+                            <textarea id="message" name="message" rows="5" required
+                                placeholder="Descreva brevemente sua necessidade..."></textarea>
+                            <span class="error-message" id="messageError"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary submit-btn">
+                            <span class="btn-text">Enviar Mensagem</span>
+                            <span class="btn-loading">
+                                <i class="fas fa-spinner fa-spin"></i> Enviando...
+                            </span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Informações de Contato -->
+        <section class="contact-info-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Outras Formas de Contato</h2>
+                    <p>Escolha a maneira mais conveniente para você</p>
+                </div>
+                <div class="contact-methods">
+                    <div class="contact-method-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <h3>Telefone</h3>
+                        <p>Fale diretamente com nossa equipe</p>
+                        <a href="tel:+5511999999999">(11) 9999-9999</a>
+                    </div>
+                    <div class="contact-method-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <h3>WhatsApp</h3>
+                        <p>Atendimento rápido pelo WhatsApp</p>
+                        <a href="https://wa.me/5511999999999">(11) 99999-9999</a>
+                    </div>
+                    <div class="contact-method-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>E-mail</h3>
+                        <p>Envie suas dúvidas por e-mail</p>
+                        <a href="mailto:contato@cadesnet.com.br">contato@cadesnet.com.br</a>
+                    </div>
+                    <div class="contact-method-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>Horário de Atendimento</h3>
+                        <p>Segunda a Sexta: 8h às 18h</p>
+                        <span>Sábado: 8h às 12h</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-placeholder">CN</div>
+                        <span>CadesNet</span>
+                    </div>
+                    <p>Sua conexão com o futuro</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="servico.html">Serviços</a></li>
+                        <li><a href="sobre.html">Sobre Nós</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Serviços</h3>
+                    <ul>
+                        <li><a href="servico.html">Internet Fibra</a></li>
+                        <li><a href="servico.html">Assistência Técnica</a></li>
+                        <li><a href="servico.html">CFTV</a></li>
+                        <li><a href="servico.html">Infraestrutura</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contato Rápido</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>(11) 9999-9999</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>(11) 99999-9999</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>contato@cadesnet.com.br</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 CadesNet. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal de Confirmação -->
+    <div class="modal" id="successModal">
+        <div class="modal-content">
+            <div class="modal-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3>Mensagem Enviada!</h3>
+            <p>Obrigado! Retornaremos em breve!.</p>
+            <button class="btn btn-primary" id="closeModal">Fechar</button>
+        </div>
+    </div>
+
+    <script src="/js/contato.js"></script>
+</body>
+
+</html>
